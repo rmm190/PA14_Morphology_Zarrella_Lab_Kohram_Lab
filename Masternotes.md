@@ -32,4 +32,22 @@ A useful way to know how things are labeled in your spreadsheet so that you can 
 ```
 names(data)
 ```
+To perform a one-way ANOVA, use this (but make sure to update with your specific variables and how you've labeled your spreadsheet.
 
+```
+length_anova <- aov(Length..um. ~ Timepoint, data = data)
+
+summary(length_anova)
+```
+
+```
+width_anova <- aov(Width_um ~ Timepoint, data = data)
+
+summary(width_anova)
+```
+
+```
+fluor_anova <- aov(Mean_Fluor ~ Timepoint, data = data)
+
+summary(fluor_anova)
+```
