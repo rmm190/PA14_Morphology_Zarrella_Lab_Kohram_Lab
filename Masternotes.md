@@ -6,10 +6,6 @@ ggplot(data,
        aes(x = Timepoint,
            y = Length..um.)) +
   geom_boxplot() +
-  stat_summary(fun = mean,
-               geom = "point",
-               shape = 18,
-               size = 3) +
   theme_classic() +
   labs(
     x = "Time Point",
