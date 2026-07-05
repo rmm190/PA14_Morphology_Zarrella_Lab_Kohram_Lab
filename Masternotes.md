@@ -2,12 +2,14 @@
 
 This one is used for mean cell length. Note that you'll have to adjust based on the spreadsheet labeles that you're using.
 ```
-library(ggplot2)
-
 ggplot(data,
-       aes(x = Timepoint (min),
+       aes(x = Timepoint,
            y = Length..um.)) +
   geom_boxplot() +
+  stat_summary(fun = mean,
+               geom = "point",
+               shape = 18,
+               size = 3) +
   theme_classic() +
   labs(
     x = "Time Point",
