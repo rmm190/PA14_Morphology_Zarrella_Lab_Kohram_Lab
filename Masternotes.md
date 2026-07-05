@@ -8,7 +8,7 @@ ggplot(data,
   geom_boxplot() +
   theme_classic() +
   labs(
-    x = "Time Point",
+    x = "Time Point (minutes)",
     y = "Cell Length (µm)"
   )
 ```
