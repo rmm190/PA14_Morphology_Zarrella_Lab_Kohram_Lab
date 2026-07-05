@@ -26,3 +26,10 @@ ggplot(data,
     y = "Cell Length (µm)"
   )
 ```
+
+A useful way to know how things are labeled in your spreadsheet so that you can accurately call select rows/columns of the spreadsheet for making figures. I highly recommend having a "master spreadsheet" with all of your data points in sequence with one another. You can collect data in individual spreadsheets, but then when you use R Studio, it's easier to have one big one to work with.
+
+```
+names(data)
+```
+
