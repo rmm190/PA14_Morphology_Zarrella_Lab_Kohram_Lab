@@ -44,10 +44,29 @@ summary(length_anova)
 width_anova <- aov(Width_um ~ Timepoint, data = data)
 
 summary(width_anova)
-```
 
+```
 ```
 fluor_anova <- aov(Mean_Fluor ~ Timepoint, data = data)
 
 summary(fluor_anova)
+```
+
+Reporting the means for different data points. As always, will need to know what the labels on your spreadsheet are.
+```
+aggregate(Length..um. ~ Timepoint,
+          data = data,
+          mean)
+```
+
+```
+aggregate(Width_um ~ Timepoint,
+          data = data,
+          mean)
+```
+
+```
+aggregate(Mean_Fluor ~ Timepoint,
+          data = data,
+          mean)
 ```
